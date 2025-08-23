@@ -26,3 +26,14 @@ Language used: C
 📑 File Naming Format
 
 To keep it simple and organized, files are named like this:
+
+
+🎯 Goals
+
+Improve problem-solving skills 🧠
+
+Strengthen programming fundamentals ⚡
+
+Build the consistency habit ✅
+
+Track progress publicly 📊
