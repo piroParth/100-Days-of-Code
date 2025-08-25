@@ -2,8 +2,7 @@
 #include <stdio.h>
 
 int main() {
-    int a, b;
-    ;
+    int a, b, temp;
 
     // Input two numbers
     printf("Enter first number: ");
@@ -13,14 +12,16 @@ int main() {
     scanf("%d", &b);
 
     // Swap using a third variable
-    a=a+b;
-    b=a-b;
-    a=a-b;
-    // Output result
+    temp = a;
+    a = b;
+    b = temp;
+
+    // Output after swapping
     printf("After swapping:\n");
     printf("First number = %d\n", a);
     printf("Second number = %d\n", b);
 
     return 0;
 }
+
 
