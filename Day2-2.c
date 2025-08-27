@@ -9,12 +9,11 @@ int main() {
     scanf("%f", &radius);
     area = PI * radius * radius;
     circumference = 2 * PI * radius;
-
-    // Output results
     printf("Area of the circle: %.2f\n", area);
     printf("Circumference of the circle: %.2f\n", circumference);
 
     return 0;
 }
+
 
 
