@@ -10,7 +10,7 @@ int main() {
     a=a+b;
     b=a-b;
     a=a-b;
-    // Output result
+
     printf("After swapping:\n");
     printf("First number = %d\n", a);
     printf("Second number = %d\n", b);
@@ -18,3 +18,4 @@ int main() {
     return 0;
 
 }
+
