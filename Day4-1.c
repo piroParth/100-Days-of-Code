@@ -2,16 +2,11 @@
 
 int main() {
     int a, b;
-    ;
-
-    // Input two numbers
     printf("Enter first number: ");
     scanf("%d", &a);
 
     printf("Enter second number: ");
     scanf("%d", &b);
-
-    // Swap using a third variable
     a=a+b;
     b=a-b;
     a=a-b;
@@ -21,4 +16,5 @@ int main() {
     printf("Second number = %d\n", b);
 
     return 0;
+
 }
