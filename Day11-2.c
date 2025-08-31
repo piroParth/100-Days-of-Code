@@ -9,11 +9,11 @@ int main() {
 
     if (sp>cp) {
         percentage = ((sp-cp)/cp) * 100;
-        printf("Profit %.0f%%\n", percentage);
+        printf("Profit %.2f%%\n", percentage);
     }
     else if (sp<cp) {
         percentage = ((cp-sp)/cp) * 100;
-        printf("Loss %.0f%%\n", percentage);
+        printf("Loss %.2f%%\n", percentage);
     }
     else {
         printf("No Profit No Loss\n");
@@ -21,3 +21,4 @@ int main() {
 
     return 0;
 }
+
