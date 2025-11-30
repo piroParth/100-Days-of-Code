@@ -15,4 +15,16 @@ int main() {
 
     int leftSum = 0, pivot = -1;
     for (int i = 0; i < n; i++) {
-        int rightSum = tota
+        int rightSum = totalSum - leftSum - nums[i];
+
+        if (leftSum == rightSum) {
+            printf("%d", i);
+            return 0;
+        }
+        leftSum += nums[i];
+    }
+
+    printf("-1");
+    return 0;
+}
+
