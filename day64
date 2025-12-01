@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char s[1000];
+    scanf("%s", s);
+
+    int freq[256] = {0};   // frequency map for ASCII chars
+    int left = 0, right = 0;
+    int maxLen = 0;
+    int n = strlen(s);
+
+    while (right < n) {
+        char ch = s[right];
+        freq[ch]++;
+
+        // If character repeats, move left pointer to make substring valid
+        while (freq[ch] > 1) {
+            freq[s[left]]--;
+            left++;
+        }
+
+        // Update longest valid window length
+        int currLen = right - left + 1;
+        if (currLen > maxLen)
+            maxLen = currLen;
+
+        right++;
+    }
+
+    printf("%d", maxLen);
+    return 0;
+}
