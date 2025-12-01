@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <ctype.h>
+
+int main() {
+    char str[200];
+    fgets(str, sizeof(str), stdin);
+
+    int i = 0;
+    int start = 1; // Marks start of a new word
+
+    while (str[i] != '\0') {
+        if (start && isalpha(str[i])) {
+            str[i] = toupper(str[i]);
+            start = 0;
+        } else if (str[i] == ' ') {
+            start = 1;
+        }
+        i++;
+    }
+
+    printf("%s", str);
+    return 0;
+}
